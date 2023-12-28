@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Classic 350 Configurator</title>
+		<link
+			rel="stylesheet"
+			href="./src/style.css" />
+	</head>
+	<body>
+		<div id="mainDiv">
+			<div id="categories-section"></div>
+			<div id="items-section"></div>
+			<div id="bikeView">
+				<div id="bike-section">
+					<div id="bike-heading-row">
+						<div id="bike-name-div">
+							<img
+								id="bike-logo"
+								src="./static/images/Common/RoyalEnfieldLogo.svg"
+								alt="Royal Enfield Logo" />
+							<div id="bike-name">Classic 350 Dual Channel</div>
+						</div>
+						<div id="prices-div">
+							<div id="bike-price-div">
+								<div id="bike-price">&#x20B9;2,59,546</div>
+								<div id="emi">EMI</div>
+								<img
+									id="edit-emi"
+									src=""
+									alt="" />
+							</div>
+						</div>
+					</div>
+					<div id="side-bar-controls">
+						<div id="controls-div">
+							<div id="controls-icon-div">&#10005;</div>
+							<div id="controls-icon-div">
+								<img
+									id="control-icon-img"
+									src="./static/images/Common/DownIcon.png"
+									alt="" />
+
+								<img
+									id="control-icon-img"
+									src="./static/images/Common/DownIcon.png"
+									alt="" />
+
+								<img
+									id="control-icon-img"
+									src="./static/images/Common/DownIcon.png"
+									alt="" />
+
+								<img
+									id="control-icon-img"
+									src="./static/images/Common/DownIcon.png"
+									alt="" />
+							</div>
+						</div>
+					</div>
+					<canvas id="webgl"></canvas>
+				</div>
+			</div>
+		</div>
+		<div id="loaderDiv">
+			<img
+				id="loader-logo"
+				src="./static/images/Common/RoyalEnfieldLogo.svg"
+				alt="Royal Enfield Logo" />
+			<div id="loader">
+				<img
+					id="loader-gif"
+					src="./static/images/Common/Loader.gif"
+					alt="Royal Enfield Loader" />
+			</div>
+		</div>
+		<div id="rotateScreenDiv">
+			<div id="rotate-screen-icon">
+				<img
+					id="rotate-screen-img"
+					src="./static/images/Common/screen-rotation-button.png"
+					alt="Rotate Screen" />
+			</div>
+			<div id="rotate-screen-info">
+				<span id="rotate-heading-1">ROTATE</span>
+				<span id="rotate-heading-2">YOUR PHONE</span>
+				<span id="rotate-heading-3">FOR THE BEST EXPERIENCE</span>
+			</div>
+		</div>
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+					"three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+				}
+			}
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+		<script
+			type="module"
+			src="./src/script.js"></script>
+	</body>
+</html>
